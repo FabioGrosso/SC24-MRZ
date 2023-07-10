@@ -1,7 +1,5 @@
 # AMRIC: A Novel In Situ Lossy Compression Framework for Efficient I/O in Adaptive Mesh Refinement Applications
 
-[![DOI](https://zenodo.org/badge/658166802.svg)](https://zenodo.org/badge/latestdoi/658166802)
-
 AMRIC is a novel in-situ lossy compression framework that leverages the HDF5 filter to enhance both I/O efficiency and compression quality for Adaptive Mesh Refinement (AMR) applications. AMRIC was integrated into the [AMReX](https://amrex-codes.github.io/amrex/) framework and evaluated on two real-world AMR applications, Nyx and WarpX.
 
 While preparing the artifacts, we executed them on a single node from the Chameleon Cloud, equipped with two Intel Xeon Gold 6242 CPUs and 192 GB of memory (specifically, ```compute_skylake``` configuration). We recommend that reviewers also use the Chameleon Cloud for artifact evaluation.

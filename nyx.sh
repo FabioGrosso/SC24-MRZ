@@ -11,7 +11,7 @@ cd $AMRIC_HOME/Nyx/Exec/AMR-density
 
 make clean
 cp $AMRIC_HOME/amrex/Src/Extern/HDF5/AMReX_PlotFileUtilHDF5.pad $AMRIC_HOME/amrex/Src/Extern/HDF5/AMReX_PlotFileUtilHDF5.cpp
-make -j 16 USE_HDF5_SZ3=TRUE SZ3_HOME=$SZ3_HOME-adp
+make -j 16 USE_HDF5_SZ3=TRUE SZ3_HOME=$SZ3_HOME-pad
 mv Nyx3d* pad
 
 make clean

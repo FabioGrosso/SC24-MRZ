@@ -49,48 +49,48 @@ cd /home/nyx256/run
 . decomp.sh 
 . qualityCR.sh 
 ```
-### Step 2.1: Run WarpX with no compression, original SZ3 compression, and ours (2 iterations, 3 mins)
+### Step 4.1: Run WarpX with no compression, original SZ3 compression, and ours (2 iterations, 3 mins)
 ```
 cd /home/wpx/
 . go.sh
 ```
-### Step 2.2: Evaluate WarpX's data quality and compression ratio for Baseline-SZ3, and ours
+### Step 4.2: Evaluate WarpX's data quality and compression ratio for Baseline-SZ3, and ours
 ```
 cd /home/wpx/diags
 . decomp.sh 
 . qualityCR.sh 
 ```
-### Step 3.1: Compress RT data using with Baseline-SZ3, AMRIC-SZ3, TAC-SZ3, and ours (pad+eb)
+### Step 5.1: Compress RT data using with Baseline-SZ3, AMRIC-SZ3, TAC-SZ3, and ours (pad+eb)
 ```
 cd /home/rtamr/
 . go.sh 
 ```
-### Step 3.2: Evaluate RT data quality and CR for Baseline-SZ3, AMRIC-SZ3, TAC-SZ3, and ours (pad+eb)
+### Step 5.2: Evaluate RT data quality and CR for Baseline-SZ3, AMRIC-SZ3, TAC-SZ3, and ours (pad+eb)
 ```
 . qualityCR.sh 
 ```
-### Step 4.1: Compress/decompress multi-resolution dataset Hurricane using SZ2/ZFP with our post-process
+### Step 6.1: Compress/decompress multi-resolution dataset Hurricane using SZ2/ZFP with our post-process
 ```
 cd /home/post-mr/
 . go.sh 
 ```
-### Step 4.2: Evaluate Hurricane data quality and CR for original SZ2, ZFP, and with our post-process
+### Step 6.2: Evaluate Hurricane data quality and CR for original SZ2, ZFP, and with our post-process
 ```
 . qualityCR.sh 
 ```
-### Step 5.1: Compress/decompress uniform-resolution dataset S3D using SZ2/ZFP with our post-process
+### Step 7.1: Compress/decompress uniform-resolution dataset S3D using SZ2/ZFP with our post-process
 ```
 cd /home/post-uni/
 . go.sh 
 ```
-### Step 5.2: Evauate S3D data quality and CR for original SZ2, ZFP, and with our post-process.
+### Step 7.2: Evauate S3D data quality and CR for original SZ2, ZFP, and with our post-process.
 ```
 . qualityCR.sh 
 ```
-### Step 5.3: Evaluate the run time of the original compression and post-processing on S3D using ZFP and SZ2 (Serial)
+### Step 7.3: Evaluate the run time of the original compression and post-processing on S3D using ZFP and SZ2 (Serial)
 ```
 ```
-### Step 6: Compute the uncertainty of the decompressed hurricane data. And generate visualizations of original, decompressed, and decompressed data with uncertainty.
+### Step 8: Compute the uncertainty of the decompressed hurricane data. And generate visualizations of original, decompressed, and decompressed data with uncertainty.
 ```
 cd /home/vis
 . go.sh

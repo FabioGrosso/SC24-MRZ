@@ -89,6 +89,7 @@ cd /home/post-uni/
 ```
 ### Step 7.3: Evaluate the run time of the original compression and post-processing on S3D using ZFP and SZ2 (Serial)
 ```
+. time.sh
 ```
 ### Step 8: Compute the uncertainty of the decompressed hurricane data. And generate visualizations of original, decompressed, and decompressed data with uncertainty.
 ```

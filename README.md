@@ -44,6 +44,8 @@ export C_INCLUDE_PATH=/opt/ompi/include:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=/opt/ompi/include:$CPLUS_INCLUDE_PATH
 export OMPI_ALLOW_RUN_AS_ROOT=1
 export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+Xvfb :99 -screen 0 1024x768x24 &
+export DISPLAY=:99
 ```
 
 ### Step 3.1: Run NYX with no compression, original SZ3 compression, AMRIC, and ours (2 iterations, 8 mins)
@@ -108,8 +110,6 @@ cd /home/post-uni/
 ### Step 8: Compute the uncertainty of the decompressed hurricane data. And generate visualizations of original, decompressed, and decompressed data with uncertainty.
 ```
 cd /home/vis
-Xvfb :99 -screen 0 1024x768x24 &
-export DISPLAY=:99
 . go.sh
 ```
 

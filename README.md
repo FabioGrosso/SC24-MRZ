@@ -44,7 +44,6 @@ export C_INCLUDE_PATH=/opt/ompi/include:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=/opt/ompi/include:$CPLUS_INCLUDE_PATH
 export OMPI_ALLOW_RUN_AS_ROOT=1
 export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
-Xvfb :99 -screen 0 1024x768x24 &
 export DISPLAY=:99
 ```
 

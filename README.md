@@ -108,6 +108,8 @@ cd /home/post-uni/
 ### Step 8: Compute the uncertainty of the decompressed hurricane data. And generate visualizations of original, decompressed, and decompressed data with uncertainty.
 ```
 cd /home/vis
+Xvfb :99 -screen 0 1024x768x24 &
+export DISPLAY=:99
 . go.sh
 ```
 

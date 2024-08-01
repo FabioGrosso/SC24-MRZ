@@ -32,6 +32,19 @@ sudo singularity build --sandbox mrz mrz.sif
 sudo singularity shell --writable mrz
 ```
 
+### Step 3.0: Set up environmental variables
+```
+export OMPI_DIR=/opt/ompi 
+export OMPI_VERSION=4.1.1
+export PATH=$OMPI_DIR/bin:$PATH
+export LD_LIBRARY_PATH=$OMPI_DIR/lib:$LD_LIBRARY_PATH
+export MANPATH=$OMPI_DIR/share/man:$MANPATH
+export C_INCLUDE_PATH=/opt/ompi/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/opt/ompi/include:$CPLUS_INCLUDE_PATH
+export OMPI_ALLOW_RUN_AS_ROOT=1
+export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+```
+
 ### Step 3.1: Run NYX with no compression, original SZ3 compression, AMRIC, and ours (2 iterations, 8 mins)
 ```
 cd /home/nyx256/
